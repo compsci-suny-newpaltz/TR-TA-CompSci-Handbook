@@ -1,3 +1,4 @@
+# Brightspace Access
 
 Brightspace is the main Learning Management System (LMS) used for course content, assignments, grades, and communication. As a TA/TR, you will be given access to assist with grading, managing submissions, creating announcements, or answering student questions.
 
@@ -20,7 +21,7 @@ Your permissions may vary by course and instructor, but typically you’ll be ab
 - Leave written feedback
 - View and update the gradebook (if permitted)
 
-If you're unsure about your specific permissions, ask your instructor to clarify. If needed, see [[How-To Sign Timesheet]] for Brightspace tutorials.
+If you're unsure about your specific permissions, ask your instructor to clarify. If needed, see [How-Tos Folder](5%20Resources/How-Tos/) for Brightspace tutorials.
 
 ---
 ## Guidelines for Using Brightspace

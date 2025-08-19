@@ -9,4 +9,4 @@ Thanks again for being part of our team.
 Kaitlin Hoffmann
 Lecturer and Graduate Coordinator
 Department of Computer Science
-![[np_logo.png]]
+![[/images/np_logo.png]]

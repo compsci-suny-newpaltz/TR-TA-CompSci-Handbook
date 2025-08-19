@@ -1,3 +1,4 @@
+# Important Contacts
 
 Keep this list handy throughout the semester. These are the people and offices you may need to reach out to for support or questions.
 

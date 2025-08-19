@@ -1,3 +1,4 @@
+# Technical Help
 
 As a TA, you may encounter technical issues, whether in Brightspace, email, or other course-related systems. While you are **not responsible for fixing technical problems**, it’s important to know where to direct questions and how to handle issues if they arise.
 

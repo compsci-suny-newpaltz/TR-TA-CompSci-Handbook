@@ -1,3 +1,4 @@
+# Communication Guidelines
 
 Strong and respectful communication is key to your success as a Teaching Assistant. You’ll interact with students, faculty, and possibly other TAs—so here are a few best practices to help keep everything running smoothly.
 

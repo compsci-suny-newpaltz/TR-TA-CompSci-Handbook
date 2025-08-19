@@ -1,3 +1,4 @@
+# Code of Conduct 
 
 As a TA/TR/GA, you represent the Computer Science department and the university. Your conduct should reflect professionalism, integrity, and a commitment to creating a supportive and inclusive environment for all students.
 

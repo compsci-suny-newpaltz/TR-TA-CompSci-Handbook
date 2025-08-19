@@ -1,3 +1,4 @@
+# Grading Duties
 
 As a TR/TA, grading is one of your most important responsibilities. Your work helps ensure fairness, consistency, and timely feedback for students.  
 
@@ -34,6 +35,7 @@ As a TR/TA, grading is one of your most important responsibilities. Your work he
 - Enter grades only for the assignments the instructor assigns to you.  
 - Add feedback in the comments section when possible.  
 - Double-check totals and categories before publishing grades.
+- See [How-to Grade in Brightspace](../5%20Resources/How-Tos/How-To%20Grade%20in%20Brightspace.md) if needed.
 
 ---
 By grading carefully and consistently, you support fairness in the course and help students learn from their mistakes.

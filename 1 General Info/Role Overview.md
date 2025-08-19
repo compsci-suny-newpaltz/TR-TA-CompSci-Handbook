@@ -1,3 +1,4 @@
+# Role Overview
 
 As a TA/TR, you play a vital role in supporting course delivery and enhancing student learning. Below is a breakdown of expectations, workload, and eligibility to help you succeed.
 

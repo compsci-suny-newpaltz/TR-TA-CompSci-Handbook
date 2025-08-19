@@ -1,3 +1,4 @@
+# Weekly Checklist
 
 This checklist outlines your regular responsibilities as a TA/TR. Use it as a guide each week to stay on track and ensure nothing is overlooked.
 
@@ -13,7 +14,7 @@ This checklist outlines your regular responsibilities as a TA/TR. Use it as a gu
 - Hold scheduled office hours.  
 	  - Be prepared to answer student questions. 
 	  - Keep track of common issues to report back to the instructor.
-	  - If you need to cancel or reschedule your office hours, let both the instructor and students know. Brightspace allows you to create and send announcements that will send an email to all students in the course. See [[How-To Sign Timesheet]] for a quick tutorial.
+	  - If you need to cancel or reschedule your office hours, let both the instructor and students know. Brightspace allows you to create and send announcements that will send an email to all students in the course. See [How-To Create an Announcement](../5%20Resources/How-Tos/How-To%20Create%20an%20Announcement.md) for a quick tutorial.
 	  - If you don't have students, use the time to work on your own assignments and work!
 
 - Respond to student and faculty emails within 24–48 hours. 
