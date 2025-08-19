@@ -31,7 +31,7 @@ Welcome! This handbook is designed to support Teaching Assistants (TAs) in the C
 ### 5 Resources
 
 #### How-Tos
-- [How to Grade in Brightspace](5%20Resources/How-Tos/How%20to%20Grade%20in%20Brightspace.md)
+- [How to Grade in Brightspace](5%20Resources/How-Tos/How-to%20Grade%20in%20Brightspace.md)
 - [How to Access Course in Brightspace](5%20Resources/How-Tos/How-To%20Access%20Course%20in%20Brightspace.md)
 - [How to Create an Announcement](5%20Resources/How-Tos/How-To%20Create%20an%20Announcement.md)
 - [How to Sign Timesheet](5%20Resources/How-Tos/How-To%20Sign%20Timesheet.md)
