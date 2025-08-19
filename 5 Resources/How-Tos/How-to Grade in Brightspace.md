@@ -51,6 +51,6 @@
 
 
 
-6. Scroll down to the appropriate student, and enter the grade and feedback (if needed; feedback may already be on the physical copy). You can also use this method to update online submissions as well. Click on the *pencil icon* to leave feedback and hit save once done. 
+5. Scroll down to the appropriate student, and enter the grade and feedback (if needed; feedback may already be on the physical copy). You can also use this method to update online submissions as well. Click on the *pencil icon* to leave feedback and hit save once done. 
 
 ![enter grade page](/images/brightspace_enter_grades_feedback.png)
