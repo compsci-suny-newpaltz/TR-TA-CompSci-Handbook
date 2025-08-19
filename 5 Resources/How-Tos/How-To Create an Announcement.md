@@ -1,6 +1,6 @@
 # How-To Create an Announcement
 
-1. Access course in Brightspace. (see [How-To Access Course in Brightspace](../5%20Resources/How-Tos/How-To%20Access%20Course%20in%20Brightspace.md))
+1. Access course in Brightspace. (see [How-To Access Course in Brightspace](./How-To%20Access%20Course%20in%20Brightspace.md))
 
 2. Click on down-arrow next to ***Announcements*** then click on ***New Announcement***
 
