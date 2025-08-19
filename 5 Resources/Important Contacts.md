@@ -63,7 +63,7 @@ SUNY New Paltz Title IX coordinators are **Danielle Strauchler** and **Tanhena
 ---
 ## Campus Safety
 
-- **Phone (Emergency):** [(845) 257-2222](tel:8452572222) on non-campus phones or 911 on campus phones
+- **Phone (Emergency):** [845-257-2222](tel:8452572222) on non-campus phones or 911 on campus phones
 - **Department email:** [upd@newpaltz.edu](mailto:upd@newpaltz.edu)  
 - **UPD Anonymous Tip Line:** [845-257-2230](tel:8452572230)
 
