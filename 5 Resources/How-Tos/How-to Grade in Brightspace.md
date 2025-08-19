@@ -1,8 +1,8 @@
 # How to Grade in Brightspace
 
-1. Access course in Brightspace. (see [How-To Access Course in Brightspace](../5%20Resources/How-Tos/How-To%20Access%20Course%20in%20Brightspace.md))
+1. Access course in Brightspace. (see [How-To Access Course in Brightspace](./How-To%20Access%20Course%20in%20Brightspace.md))
 
-- There are a few ways to grade depending on if the submissions are through [[#Online Submissions via Brightspace]] or if submissions are [[#Physical Submissions]].
+- There are a few ways to grade depending on if the submissions are through Online Submissions via Brightspace or if submissions are physical Submissions.
 - **NOTE:** Not all instructors will have you grade in Brightspace or at all. Be sure to clarify grading expectations with them.
 
 ## Online Submissions via Brightspace
@@ -38,17 +38,19 @@
 
 
 
+
 3. Next, scroll down and to the right to find the appropriate item to grade. Your instructor will have to set this up. Reach out to them if you cannot find what you are looking for.
 
 ![grading quiz example](/images/brightspace_quiz.png)
 
 
+
 4. Click on the down arrow for the specific item you want to enter grades and feedback for. Then, click on **Enter Grades**.
+   
+![enter grades](/images/brightspace_enter_grades.png)
 
-![enter grades](brightspace_enter_grades.png)
 
 
+6. Scroll down to the appropriate student, and enter the grade and feedback (if needed; feedback may already be on the physical copy). You can also use this method to update online submissions as well. Click on the *pencil icon* to leave feedback and hit save once done. 
 
-5. Scroll down to the appropriate student, and enter the grade and feedback (if needed; feedback may already be on the physical copy). You can also use this method to update online submissions as well. Click on the *pencil icon* to leave feedback and hit save once done. 
-
-![enter grade page](brightspace_enter_grades_feedback.png)
+![enter grade page](/images/brightspace_enter_grades_feedback.png)
