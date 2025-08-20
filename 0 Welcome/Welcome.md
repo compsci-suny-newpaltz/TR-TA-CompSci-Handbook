@@ -6,7 +6,7 @@ Please check out the sidebar for different sections. Everything is kept up to da
 
 Thanks again for being part of our team.
 
-Kaitlin Hoffmann
-Lecturer and Graduate Coordinator
-Department of Computer Science
-![[/images/np_logo.png]]
+Kaitlin Hoffmann  
+Lecturer and Graduate Coordinator  
+Department of Computer Science  
+![new paltz logo.png](../images/np_logo.png)
