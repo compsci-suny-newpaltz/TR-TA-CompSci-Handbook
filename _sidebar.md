@@ -1,13 +1,24 @@
-* [Welcome](0%20Welcome/Welcome.md)
-* [Role Overview](1%20General%20Info/Role%20Overview.md)
-* [Code of Conduct](1%20General%20Info/Code%20of%20Conduct.md)
-* [Communication Guidelines](1%20General%20Info/Communication%20Guidelines.md)
-* [Brightspace Access](2%20Tools%20and%20Access/Brightspace%20Access.md)
-* [Technical Help](2%20Tools%20and%20Access/Technical%20Help.md)
-* [Weekly Checklist](3%20Tasks%20and%20Responsibilities/Weekly%20Checklist.md)
-* [Grading Duties](3%20Tasks%20and%20Responsibilities/Grading%20Duties.md)
-* [Office Hours](3%20Tasks%20and%20Responsibilities/Office%20Hours.md)
-* [Timesheets](3%20Tasks%20and%20Responsibilities/Timesheets%20Submission.md)
-* [Mailroom](3%20Tasks%20and%20Responsibilities/Mailroom.md)
-* [Before Semester Checklist](4%20Before%20Semester%20Setup/Before%20Semester%20Checklist.md)
-* [FAQs](5%20Resources/Quick%20FAQs.md)
+* [Welcome](TA-Handbook.md)
+* General Info
+  * [Role Overview](TA-Handbook.md#role-overview)
+  * [Code of Conduct](TA-Handbook.md#code-of-conduct)
+  * [Communication Guidelines](TA-Handbook.md#communication-guidelines)
+* Tools & Access
+  * [Brightspace Access](TA-Handbook.md#brightspace-access)
+  * [Technical Help](TA-Handbook.md#technical-help)
+* Tasks & Responsibilities
+  * [Weekly Checklist](TA-Handbook.md#weekly-checklist)
+  * [Grading Duties](TA-Handbook.md#grading-duties)
+  * [Office Hours](TA-Handbook.md#office-hours)
+  * [Timesheets Submission](TA-Handbook.md#timesheets-submission)
+  * [Mailroom](TA-Handbook.md#mailroom)
+* Before Semester Setup
+  * [Before Semester Checklist](TA-Handbook.md#before-semester-checklist)
+* Resources
+  * [Important Contacts](TA-Handbook.md#important-contacts)
+  * [Quick FAQs](TA-Handbook.md#quick-faqs)
+  * How-Tos
+    * [Access Course in Brightspace](TA-Handbook.md#how-to-access-course-in-brightspace)
+    * [Grade in Brightspace](TA-Handbook.md#how-to-grade-in-brightspace)
+    * [Sign Timesheet](TA-Handbook.md#how-to-sign-timesheet)
+    * [Use Docsify (Steps)](TA-Handbook.md#use-docsify-steps)
