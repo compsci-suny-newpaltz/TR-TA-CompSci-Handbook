@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
 <head>
   <meta charset="UTF-8">
   <title>TA Handbook</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 </head>
 <body>
   <div id="app">Loading...</div>
@@ -12,16 +10,13 @@
     window.$docsify = {
       name: 'TA/TR Handbook',
       loadSidebar: true,
-      subMaxLevel: 2
-    }
-  </script> 
-  <!--
-  <script>
-  window.$docsify = {
-    name: 'TA Handbook',
-    homepage: 'TA_Handbook_With_TOC_For_Docsify.md'
-  }
-  </script> -->
+      subMaxLevel: 2,
+      auto2top: true,
+      homepage: 'TA_Handbook_Full_For_Docsify.md',
+      sidebarDisplayLevel: 1,
+    };
+  </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 </body>
 </html>
