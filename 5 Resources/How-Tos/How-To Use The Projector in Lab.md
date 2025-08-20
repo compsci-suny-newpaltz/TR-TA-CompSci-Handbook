@@ -6,7 +6,7 @@
 
 2. Depending on the classroom, there will either be a small tablet-like screen, or a black device with similar buttons shown below next to the computer. If there is a screen, tap the screen to wake it up. Click on **Display On***.
 
-![projector tablet screen](/images/projector_screen.png)
+![projector tablet screen](../../images/projector_screen.png)
 
 3. Click on ***PC*** to project what is on the school computer.
 ## Using Your Own Computer

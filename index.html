@@ -1,21 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TA Handbook</title>
+  <title>TA Handbook - SUNY New Paltz CS Department</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /*
+     * Theme + Layout stylesheet
+     * - Light/Dark CSS variables
+     * - Sidebar layout and behavior
+     * - Content layout and responsive rules
+     * - UI polish (links, buttons, search)
+     */
+    :root {
+      /* Light mode variables - Clean modern design */
+      --theme-color: #4285f4;
+      --theme-color-light: #6fa8f7;
+      --gradient-primary: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+      --gradient-secondary: linear-gradient(135deg, #ea4335 0%, #fbbc04 100%);
+      --gradient-accent: linear-gradient(135deg, #4285f4 0%, #9c27b0 100%);
+      --gradient-hover: linear-gradient(135deg, #f8f9ff 0%, #e8f0fe 100%);
+      --gradient-button: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%);
+      
+      /* Light mode colors - Clean white/gray like the image */
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --bg-tertiary: #f1f3f4;
+      --text-primary: #202124;
+      --text-secondary: #5f6368;
+      --text-tertiary: #9aa0a6;
+      --border-color: #dadce0;
+      --sidebar-bg: #f8f9fa;
+      --sidebar-hover: #f1f3f4;
+      --code-bg: #f8f9fa;
+      --shadow-color: rgba(60, 64, 67, 0.15);
+      --accent-blue: #1a73e8;
+    }
+
+    /* Base zoom */
+    html {
+      font-size: 18px;
+    }
+
+    /* Dark mode variables - higher contrast and readability */
+    [data-theme="dark"] {
+      --bg-primary: #151a22;
+      --bg-secondary: #1d2431;
+      --bg-tertiary: #242c3a;
+      --text-primary: #f2f6fb;
+      --text-secondary: #d6dbe3;
+      --text-tertiary: #aeb6c2;
+      --border-color: #455169;
+      --sidebar-bg: #1d2431;
+      --sidebar-hover: #242c3a;
+      --code-bg: #202733;
+      --shadow-color: rgba(0, 0, 0, 0.4);
+      --accent-blue: #a7ceff;
+      
+      /* Dark mode gradients - subtle */
+      --gradient-primary: linear-gradient(135deg, #a7ceff 0%, #4285f4 100%);
+      --gradient-secondary: linear-gradient(135deg, #f28b82 0%, #ea4335 100%);
+      --gradient-accent: linear-gradient(135deg, #a7ceff 0%, #c58af9 100%);
+      --gradient-hover: linear-gradient(135deg, #242c3a 0%, #455169 100%);
+      --gradient-button: linear-gradient(135deg, #a7ceff 0%, #4285f4 100%);
+    }
+
+    /* App name gradient */
+    .app-name-link {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+    }
+
+    /* Sidebar animations (initial only) */
+    .sidebar-nav li {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Only animate on initial page load */
+    body:not(.sidebar-loaded) .sidebar-nav li {
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: slideInLeft 0.6s ease forwards;
+    }
+
+    body:not(.sidebar-loaded) .sidebar-nav li:nth-child(1) { animation-delay: 0.1s; }
+    body:not(.sidebar-loaded) .sidebar-nav li:nth-child(2) { animation-delay: 0.2s; }
+    body:not(.sidebar-loaded) .sidebar-nav li:nth-child(3) { animation-delay: 0.3s; }
+    body:not(.sidebar-loaded) .sidebar-nav li:nth-child(4) { animation-delay: 0.4s; }
+    body:not(.sidebar-loaded) .sidebar-nav li:nth-child(5) { animation-delay: 0.5s; }
+    body:not(.sidebar-loaded) .sidebar-nav li:nth-child(6) { animation-delay: 0.6s; }
+    body:not(.sidebar-loaded) .sidebar-nav li:nth-child(7) { animation-delay: 0.7s; }
+
+    @keyframes slideInLeft {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Sidebar items */
+    .sidebar-nav li > a {
+      position: relative;
+      z-index: 1;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 8px;
+      padding: 12px 16px 12px 40px; /* extra left padding to clear accent bar (doubled) */
+      margin: 6px 10px;
+      display: block;
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* Make section headers (strong text) clickable */
+    .sidebar-nav li > strong {
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      display: block;
+      padding: 12px 16px 12px 44px; /* doubled to give more room */
+      margin: 6px 10px;
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 15px;
+      border-radius: 8px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .sidebar-nav li > strong:hover {
+      background: transparent; /* no full-width highlight */
+      color: var(--accent-blue);
+    }
+
+    .sidebar-nav li > a:hover {
+      background: transparent; /* avoid block highlight covering labels */
+      color: var(--text-primary) !important;
+      transform: translateX(4px);
+      box-shadow: none;
+    }
+
+    .sidebar-nav li > a.active {
+      background: transparent; /* use left stripe only */
+      color: var(--accent-blue) !important;
+      font-weight: 600;
+    }
+
+    .sidebar-nav li > a::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 0;
+      background: var(--gradient-primary);
+      transition: width 0.3s ease;
+      border-radius: 8px 0 0 8px;
+      z-index: -1;
+    }
+
+    .sidebar-nav li > a:hover::before,
+    .sidebar-nav li > a.active::before {
+      width: 4px;
+    }
+
+    /* Content area */
+    .markdown-section {
+      /* Bring content to the left edge of the content column */
+      width: calc(100vw - (280px + 24px));
+      max-width: 1200px;
+      margin: 0 8px 0 0; /* no left margin so it hugs the content edge */
+      padding: 0;
+      animation: fadeInUp 0.8s ease-out;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    /* Body */
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      transition: all 0.3s ease;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .sidebar {
+      background: var(--sidebar-bg);
+      border-right: 1px solid var(--border-color);
+      box-shadow: 2px 0 8px var(--shadow-color);
+      width: 280px;
+      padding-left: 24px;
+      padding-right: 16px;
+      transition: transform 0.25s ease;
+    }
+
+    .sidebar > h1 {
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 20px;
+      margin: 0;
+      padding: 24px 24px 16px;
+    }
+
+    /* Adjust main content area spacing */
+    .content {
+      margin-left: calc(280px + 8px); /* sidebar width + minimal gap */
+      transition: margin-left 0.25s ease;
+    }
+
+    /* Menu toggle button */
+    .menu-toggle {
+      position: fixed;
+      top: 16px;
+      left: calc(280px - 56px); /* sidebar width - (button 40px + 16px gutter) */
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      box-shadow: 0 2px 10px var(--shadow-color);
+      cursor: pointer;
+      z-index: 2000;
+      transition: all 0.25s ease;
+    }
+    .menu-toggle i { color: var(--text-secondary); font-size: 16px; }
+    .menu-toggle:hover { transform: scale(1.05); }
+
+    /* Collapsed menu state */
+    body.menu-collapsed .sidebar {
+      transform: translateX(-110%);
+    }
+    body.menu-collapsed .content {
+      margin-left: 16px;
+    }
+
+    .markdown-section code {
+      background: var(--code-bg);
+      color: var(--text-primary);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    .markdown-section pre {
+      background: var(--code-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .markdown-section blockquote {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--accent-blue);
+      margin: 16px 0;
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Typography */
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3,
+    .markdown-section h4,
+    .markdown-section h5,
+    .markdown-section h6 {
+      color: var(--text-primary);
+      font-weight: 600;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .markdown-section h1 {
+      font-size: 32px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 16px;
+    }
+
+    .markdown-section h2 {
+      font-size: 24px;
+      color: var(--accent-blue);
+    }
+
+    .markdown-section h3 {
+      font-size: 20px;
+    }
+
+    .markdown-section p {
+      margin: 16px 0;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    @keyframes slideInFromLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes expandWidth {
+      to {
+        width: 100%;
+      }
+    }
+
+    /* remove legacy underline animation remnants */
+
+    /* Mobile (≤768px) */
+    @media (max-width: 768px) {
+      .markdown-section {
+        padding: 0;
+        margin: 0 auto;
+      }
+      
+      .sidebar {
+        width: 240px;
+        padding-right: 12px;
+        z-index: 2001; /* ensure it remains above content */
+        transform: translateX(0) !important; /* force visible on small screens */
+      }
+      
+      .content {
+        margin-left: 248px; /* leave room for the sidebar */
+      }
+
+      /* Always show sidebar on small screens even if collapsed state is set */
+      body.menu-collapsed .sidebar { transform: translateX(0) !important; }
+
+      /* Keep toggle visible and accessible */
+      .menu-toggle { left: 16px; top: 16px; }
+      
+      .cursor-gradient,
+      .cursor-gradient-2 {
+        display: none !important;
+      }
+    }
+
+    /* Medium screens (≤1400px) */
+    @media (max-width: 1400px) {
+      .markdown-section {
+        max-width: 1000px;
+        margin-left: 0; /* keep left aligned */
+        margin-right: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .sidebar {
+        width: 240px;
+        position: fixed;
+        transform: translateX(0) !important;
+        z-index: 2001;
+      }
+      
+      .content {
+        margin-left: 248px; /* leave room for sidebar */
+      }
+    }
+
+    /* Loading animation with gradient */
+    #app:empty::before {
+      content: 'Loading...';
+      display: block;
+      font-size: 2em;
+      text-align: center;
+      margin-top: 20%;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    /* Code blocks with gradient border */
+    .markdown-section pre {
+      border-left: 4px solid;
+      border-image: var(--gradient-primary) 1;
+    }
+
+    /* Enhanced links with gradient hover and animations */
+    .markdown-section a {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      text-decoration: none;
+      background: linear-gradient(120deg, transparent 0%, transparent 50%, rgba(102, 126, 234, 0.1) 50%);
+      background-size: 220%;
+      background-position: 0%;
+    }
+
+    .markdown-section a:hover {
+      color: #764ba2;
+      background-position: 100%;
+      transform: translateX(5px);
+      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+    }
+
+    /* Enhanced buttons and interactive elements */
+    .markdown-section button,
+    .markdown-section .btn {
+      background: var(--gradient-button);
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .markdown-section button:hover,
+    .markdown-section .btn:hover {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    }
+
+    .markdown-section button::before,
+    .markdown-section .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .markdown-section button:hover::before,
+    .markdown-section .btn:hover::before {
+      left: 100%;
+    }
+
+    /* Responsive tables */
+    .markdown-section table {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* Modern search box */
+    .search {
+      margin: 16px 16px 24px;
+    }
+
+    .search input {
+      width: 100%;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 12px 20px;
+      font-size: 14px;
+      color: var(--text-primary);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-sizing: border-box;
+    }
+
+    /* Prevent overlap with fixed menu toggle button */
+    .sidebar .search { margin-right: 72px; }
+    .sidebar .search input { width: calc(100% - 72px); }
+
+    @media (max-width: 768px) {
+      .sidebar .search { margin-right: 16px; }
+      .sidebar .search input { width: 100%; }
+    }
+
+    .search input:focus {
+      outline: none;
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+      background: var(--bg-primary);
+    }
+
+    .search input::placeholder {
+      color: var(--text-tertiary);
+    }
+
+    @keyframes slideInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Image animations */
+    .markdown-section img {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .markdown-section img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    }
+
+    /* Smooth page transitions */
+    .markdown-section {
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .markdown-section.loading {
+      opacity: 0.7;
+    }
+
+    /* Dark mode specific adjustments */
+    [data-theme="dark"] .markdown-section {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+    }
+
+    [data-theme="dark"] .markdown-section a {
+      color: var(--accent-blue);
+    }
+
+    [data-theme="dark"] .markdown-section a:hover {
+      color: #cfe2ff;
+    }
+
+    [data-theme="dark"] .sidebar-nav li > a {
+      color: #d0d4dc;
+    }
+
+    [data-theme="dark"] .sidebar-nav li > a:hover {
+      background: transparent;
+      color: var(--text-primary) !important;
+    }
+
+    [data-theme="dark"] .sidebar-nav li > a.active {
+      background: transparent;
+      color: var(--accent-blue) !important;
+    }
+
+    [data-theme="dark"] .sidebar-nav li > strong {
+      color: #e5e9f0;
+    }
+
+    [data-theme="dark"] .search input {
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      border-color: var(--border-color);
+    }
+
+    [data-theme="dark"] .markdown-section h1,
+    [data-theme="dark"] .markdown-section h2,
+    [data-theme="dark"] .markdown-section h3,
+    [data-theme="dark"] .markdown-section h4,
+    [data-theme="dark"] .markdown-section h5,
+    [data-theme="dark"] .markdown-section h6 {
+      color: #e9edf5;
+    }
+
+    [data-theme="dark"] .markdown-section p,
+    [data-theme="dark"] .markdown-section li {
+      color: var(--text-secondary);
+    }
+
+    [data-theme="dark"] .markdown-section blockquote {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--accent-blue);
+      color: var(--text-secondary);
+    }
+
+    [data-theme="dark"] .sidebar {
+      background: var(--sidebar-bg);
+      border-right: 1px solid var(--border-color);
+    }
+
+    [data-theme="dark"] .app-name {
+      color: var(--text-primary) !important;
+    }
+
+    /* Hide the bottom Docsify sidebar toggle strip entirely */
+    .sidebar-toggle,
+    .sidebar-toggle .sidebar-toggle-button,
+    .sidebar-toggle-button {
+      display: none !important;
+    }
+
+    /* Theme toggle button styling */
+    #theme-toggle {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+    
+    #theme-toggle:hover {
+      transform: scale(1.1);
+      border-color: var(--text-primary);
+      background: var(--bg-secondary);
+    }
+    
+    #theme-toggle:hover #theme-icon {
+      color: var(--text-primary);
+    }
+
+    /* Cursor gradients only visible in sidebar area */
+    .cursor-gradient {
+      position: fixed;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(66, 133, 244, 0.03) 0%, rgba(66, 133, 244, 0.01) 40%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 1;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      mix-blend-mode: normal;
+      opacity: 0;
+      filter: blur(1px);
+    }
+
+    .cursor-gradient-2 {
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(52, 168, 83, 0.02) 0%, rgba(52, 168, 83, 0.005) 50%, transparent 80%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 1;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      mix-blend-mode: normal;
+      opacity: 0;
+      filter: blur(2px);
+    }
+
+
+
+    /* Dark mode cursor gradients */
+    [data-theme="dark"] .cursor-gradient {
+      background: radial-gradient(circle, rgba(138, 180, 248, 0.04) 0%, rgba(138, 180, 248, 0.01) 40%, transparent 70%);
+    }
+
+    [data-theme="dark"] .cursor-gradient-2 {
+      background: radial-gradient(circle, rgba(197, 138, 249, 0.03) 0%, rgba(197, 138, 249, 0.008) 50%, transparent 80%);
+    }
+
+    /* Hide cursor gradients on mobile */
+    @media (max-width: 768px) {
+      .cursor-gradient,
+      .cursor-gradient-2 {
+        display: none;
+      }
+    }
+
+    /* Enhanced sidebar dropdown styling */
+    .sidebar-nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .sidebar-nav ul ul {
+      margin-left: 12px; /* keep slight indent */
+      border-left: none; /* remove decorative border */
+      padding-left: 12px;
+    }
+
+    .sidebar-nav ul ul li {
+      margin: 4px 0;
+    }
+
+    .sidebar-nav ul ul li a {
+      font-size: 0.9em;
+      padding: 8px 12px 8px 28px; /* decreased indent */
+      border-radius: 6px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .sidebar-nav ul ul li a::before {
+      content: none; /* remove decorative dash */
+    }
+
+    /* Make all clickable elements have pointer cursor */
+    .sidebar-nav a,
+    .sidebar-nav strong,
+    .sidebar-nav [role="button"] {
+      cursor: pointer !important;
+    }
+
+    /* Add subtle animation to section headers */
+    .sidebar-nav > ul > li {
+      position: relative;
+    }
+
+    .sidebar-nav > ul > li::before {
+      content: '';
+      position: absolute;
+      left: 0; /* align to container edge */
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: var(--accent-blue);
+      border-radius: 0 2px 2px 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .sidebar-nav > ul > li:hover::before {
+      opacity: 1;
+    }
+
+    /* Interactive gradient hover effects */
+    .markdown-section h1:hover,
+    .markdown-section h2:hover,
+    .markdown-section h3:hover {
+      background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.05), transparent);
+      background-size: 200% 100%;
+      animation: gradientShift 2s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    /* Enhanced button gradients that follow cursor */
+    .markdown-section button,
+    .markdown-section .btn {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .markdown-section button::after,
+    .markdown-section .btn::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+                                 rgba(255, 255, 255, 0.3) 0%, 
+                                 transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .markdown-section button:hover::after,
+    .markdown-section .btn:hover::after {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
-  <div id="app">Loading...</div>
+  <div id="app"></div>
+  <!-- Custom Menu Toggle Button -->
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+  
+  <!-- Cursor Following Gradients (sidebar only) -->
+  <div class="cursor-gradient" id="cursor-gradient"></div>
+  <div class="cursor-gradient-2" id="cursor-gradient-2"></div>
+  
+  <!-- Theme Toggle Button -->
+  <div id="theme-toggle" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; cursor: pointer; background: transparent; border: 2px solid var(--text-secondary); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+    <i id="theme-icon" class="fas fa-moon" style="color: var(--text-secondary); font-size: 18px;"></i>
+  </div>
   <script>
+    // Custom menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    if (menuToggle) {
+      menuToggle.addEventListener('click', () => {
+        document.body.classList.toggle('menu-collapsed');
+      });
+    }
     window.$docsify = {
       name: 'TA Handbook',
+      logo: '',
+      repo: 'compsci-suny-newpaltz/TR-TA-CompSci-Handbook',
       loadSidebar: true,
-      subMaxLevel: 0,
+      subMaxLevel: 2,
       auto2top: true,
-      homepage: 'TA-Handbook'
+      homepage: 'README.md',
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Search handbook...',
+        noData: 'No results found',
+        depth: 3
+      },
+      pagination: {
+        previousText: '← Previous',
+        nextText: 'Next →',
+        crossChapter: true
+      },
+      tabs: {
+        persist: true,
+        sync: true,
+        theme: 'material',
+        tabComments: true,
+        tabHeadings: true
+      },
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      themeable: {
+        readyTransition: true,
+        responsiveTables: true
+      }
     };
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  
+  <!-- Theme and Animation Control Script -->
+  <script>
+    // Theme switching functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const body = document.body;
+    
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', currentTheme);
+    updateThemeIcon(currentTheme);
+    
+    // Theme toggle click handler
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = body.getAttribute('data-theme') || 'light';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      body.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+    
+    function updateThemeIcon(theme) {
+      if (theme === 'light') {
+        themeIcon.className = 'fas fa-moon';
+      } else {
+        themeIcon.className = 'fas fa-sun';
+      }
+    }
+    
+    // Cursor following gradients
+    const cursorGradient = document.getElementById('cursor-gradient');
+    const cursorGradient2 = document.getElementById('cursor-gradient-2');
+    let mouseX = 0, mouseY = 0;
+    
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      
+      // Only show gradients when in sidebar area (left 300px)
+      const inSidebar = mouseX <= 300;
+      
+      if (inSidebar) {
+        // Update cursor gradients with smooth following
+        if (cursorGradient) {
+          cursorGradient.style.left = (mouseX - 150) + 'px';
+          cursorGradient.style.top = (mouseY - 150) + 'px';
+          cursorGradient.style.opacity = '1';
+        }
+        
+        if (cursorGradient2) {
+          cursorGradient2.style.left = (mouseX - 100) + 'px';
+          cursorGradient2.style.top = (mouseY - 100) + 'px';
+          cursorGradient2.style.opacity = '1';
+        }
+        
+        // Enhanced gradient intensity based on movement speed (much more subtle)
+        const speed = Math.sqrt(e.movementX * e.movementX + e.movementY * e.movementY);
+        const intensity = Math.min(speed * 0.02, 0.3);
+        
+        if (cursorGradient) {
+          cursorGradient.style.transform = `scale(${1 + intensity * 0.1})`;
+        }
+        if (cursorGradient2) {
+          cursorGradient2.style.transform = `scale(${1 + intensity * 0.05})`;
+        }
+      } else {
+        // Hide gradients when not in sidebar
+        if (cursorGradient) {
+          cursorGradient.style.opacity = '0';
+        }
+        if (cursorGradient2) {
+          cursorGradient2.style.opacity = '0';
+        }
+      }
+    });
+    
+    // Enhanced button interactions
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('button, .btn');
+      
+      buttons.forEach(button => {
+        button.addEventListener('mousemove', (e) => {
+          const rect = button.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          
+          button.style.setProperty('--mouse-x', x + 'px');
+          button.style.setProperty('--mouse-y', y + 'px');
+        });
+      });
+    });
+    
+    // Sidebar animation control
+    let sidebarLoaded = false;
+    
+    // Mark sidebar as loaded after initial animation
+    setTimeout(() => {
+      body.classList.add('sidebar-loaded');
+      sidebarLoaded = true;
+    }, 2000);
+    
+    // Only animate sidebar on home page or initial load
+    window.addEventListener('hashchange', function() {
+      const currentPath = window.location.hash;
+      if (currentPath === '#/' || currentPath === '' || currentPath.includes('README')) {
+        body.classList.remove('sidebar-loaded');
+        setTimeout(() => {
+          body.classList.add('sidebar-loaded');
+        }, 100);
+      }
+    });
+    
+    // Remove custom submenu toggling to avoid conflicts with collapse plugin
+  </script>
 </body>
 </html>
