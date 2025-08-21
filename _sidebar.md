@@ -1,34 +1,34 @@
-* [Home](TA-Handbook.md)
+* [Home](README.md)
 
 * **Welcome**
-  * [Welcome](TA-Handbook.md#welcome)
+  * [Welcome](0%20Welcome/Welcome.md)
 
 * **General Info**
-  * [Role Overview](TA-Handbook.md#role-overview)
-  * [Code of Conduct](TA-Handbook.md#code-of-conduct)
-  * [Communication Guidelines](TA-Handbook.md#communication-guidelines)
+  * [Role Overview](1%20General%20Info/Role%20Overview.md)
+  * [Code of Conduct](1%20General%20Info/Code%20of%20Conduct.md)
+  * [Communication Guidelines](1%20General%20Info/Communication%20Guidelines.md)
 
 * **Tools & Access**
-  * [Brightspace Access](TA-Handbook.md#brightspace-access)
-  * [Technical Help](TA-Handbook.md#technical-help)
+  * [Brightspace Access](2%20Tools%20and%20Access/Brightspace%20Access.md)
+  * [Technical Help](2%20Tools%20and%20Access/Technical%20Help.md)
 
 * **Tasks & Responsibilities**
-  * [Weekly Checklist](TA-Handbook.md#weekly-checklist)
-  * [Grading Duties](TA-Handbook.md#grading-duties)
-  * [Office Hours](TA-Handbook.md#office-hours)
-  * [Timesheets Submission](TA-Handbook.md#timesheets-submission)
-  * [Mailroom](TA-Handbook.md#mailroom)
+  * [Weekly Checklist](3%20Tasks%20and%20Responsibilities/Weekly%20Checklist.md)
+  * [Grading Duties](3%20Tasks%20and%20Responsibilities/Grading%20Duties.md)
+  * [Office Hours](3%20Tasks%20and%20Responsibilities/Office%20Hours.md)
+  * [Timesheets Submission](3%20Tasks%20and%20Responsibilities/Timesheets%20Submission.md)
+  * [Mailroom](3%20Tasks%20and%20Responsibilities/Mailroom.md)
 
 * **Before Semester Setup**
-  * [Before Semester Checklist](TA-Handbook.md#before-semester-checklist)
+  * [Before Semester Checklist](4%20Before%20Semester%20Setup/Before%20Semester%20Checklist.md)
 
 * **Resources**
-  * [Important Contacts](TA-Handbook.md#important-contacts)
-  * [Quick FAQs](TA-Handbook.md#quick-faqs)
+  * [Important Contacts](5%20Resources/Important%20Contacts.md)
+  * [Quick FAQs](5%20Resources/Quick%20FAQs.md)
 
 * **How-Tos**
-  * [Access Course in Brightspace](TA-Handbook.md#how-to-access-course-in-brightspace)
-  * [Grade in Brightspace](TA-Handbook.md#how-to-grade-in-brightspace)
-  * [Create an Announcement](TA-Handbook.md#how-to-create-an-announcement)
-  * [Sign Timesheet](TA-Handbook.md#how-to-sign-timesheet)
-  * [Use The Projector in Lab](TA-Handbook.md#how-to-use-the-projector-in-lab)
+  * [Access Course in Brightspace](5%20Resources/How-Tos/How-To%20Access%20Course%20in%20Brightspace.md)
+  * [Grade in Brightspace](5%20Resources/How-Tos/How-To%20Grade%20in%20Brightspace.md)
+  * [Create an Announcement](5%20Resources/How-Tos/How-To%20Create%20an%20Announcement.md)
+  * [Sign Timesheet](5%20Resources/How-Tos/How-To%20Sign%20Timesheet.md)
+  * [Use The Projector in Lab](5%20Resources/How-Tos/How-To%20Use%20The%20Projector%20in%20Lab.md)

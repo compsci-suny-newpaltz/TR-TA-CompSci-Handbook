@@ -6,7 +6,7 @@
 
 2. Depending on the classroom, there will either be a small tablet-like screen, or a black device with similar buttons shown below next to the computer. If there is a screen, tap the screen to wake it up. Click on **Display On***.
 
-![projector tablet screen](/images/projector_screen.png)
+![projector tablet screen](../../images/projector_screen.png)
 
 3. Click on ***PC*** to project what is on the school computer.
 ## Using Your Own Computer
@@ -31,4 +31,4 @@
 - Press the center directional button to stop the projector screen
 - Use the volume knob to control audio levels in the room
 ---
-See [Technical Help](../../2%20Tools%20and%20Access/Technical%20Help.md) if you run into any issues. 
+See [Technical Help](/2%20Tools%20and%20Access/Technical%20Help.md) if you run into any issues. 

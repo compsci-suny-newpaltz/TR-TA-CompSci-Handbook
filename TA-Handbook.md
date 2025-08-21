@@ -1,5 +1,5 @@
 ## Welcome
-[Welcome](0 Welcome/Welcome)
+<!-- docsify:include 0%20Welcome/Welcome.md -->
 
 ---
 
