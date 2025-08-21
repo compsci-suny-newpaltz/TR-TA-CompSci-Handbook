@@ -13,9 +13,13 @@
         name: 'TA Handbook',
         loadSidebar: true,
         routerMode: 'hash', 
+        scrollToTop: true,
         alias: { '/.*/_sidebar.md': '/_sidebar.md' }
       }
   
+      window.addEventListener('hashchange', function () {
+        window.scrollTo(0, 0);
+      });
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>

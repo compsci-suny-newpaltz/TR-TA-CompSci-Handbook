@@ -17,7 +17,7 @@ As a TA, you are required to submit a monthly **TA/GA Attendance Report** to rec
 ---
 ## !IMPORTANT: Signing Instructions
 
-- You **MUST** sign the form with an actual signature. **Typing your name is not allowed!
+- You **MUST** sign the form with an actual signature. Typing your name is not allowed!
 - If you don't know how to sign electronically, one way is to use the Drawing Tool in Outlook's PDF viewer. See [How-To Sign Timesheet](../5%20Resources/How-Tos/How-To%20Sign%20Timesheet.md) for detailed instructions. 
 - Printed copies will **NOT** be accepted. All timesheets must be sent via email to me.
 

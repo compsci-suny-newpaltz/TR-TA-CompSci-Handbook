@@ -22,12 +22,12 @@ As a TR/TA, grading is one of your most important responsibilities. Your work he
 ## Academic Integrity
 
 - If you suspect plagiarism, cheating, or other misconduct:  
-	  - **Do not confront the student directly.**  
-	  - Flag the submission and notify the instructor immediately.  
+    - **Do not confront the student directly.**  
+    - Flag the submission and notify the instructor immediately.  
 
 - Examples of concerns include:  
-	  - Code that appears copied from another student or online source.  
-	  - Unusual similarities in written responses.  
+    - Code that appears copied from another student or online source.  
+    - Unusual similarities in written responses.  
 
 ---
 ## Using Brightspace for Grading

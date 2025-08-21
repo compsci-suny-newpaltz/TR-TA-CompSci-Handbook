@@ -1,6 +1,6 @@
 # Frequently Asked Questions (FAQ)
 
-This FAQ answers common questions you may have as a TA. If you don’t see your question here, reach out to the Graduate Coordinator.
+This FAQ answers common questions you may have as a TA/TR. If you don’t see your question here, reach out to the Graduate Coordinator.
 
 ---
 ## Time Sheets
@@ -30,7 +30,7 @@ A: No. It is for faculty and staff only.
 ## Office Hours
 
 **Q: Do I need to hold office hours every week?**  
-A: Yes—hold them at the times arranged with your instructor.  
+A: Yes. Hold them at the times arranged with your instructor.  
 
 **Q: What if I can’t make my office hours?**  
 A: Notify the instructor, and let students know via Brightspace or email.  
@@ -51,7 +51,7 @@ A: Do not confront the student. Notify the instructor immediately.
 A: Within 24–48 hours during normal business hours.  
 
 **Q: Should I use my personal email?**  
-A: No—always use your official New Paltz email.  
+A: No. Always use your official New Paltz email.  
 
 ---
 ## General

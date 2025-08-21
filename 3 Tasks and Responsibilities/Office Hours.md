@@ -6,9 +6,9 @@ Office hours are your opportunity to provide students with extra help, answer qu
 ## Setting Up Office Hours
 
 - Decide on the day and time of your hours before the first week of classes. 
-	- Part-time TRs/TAs must hold **1.5 hours per week**
-	- Full-time TRs/TAs must hold **3 hours per week**
-	- Make sure your hours are not during lecture hours!
+  - Part-time TRs/TAs must hold **1.5 hours per week**
+  - Full-time TRs/TAs must hold **3 hours per week**
+  - Make sure your hours are not during lecture hours!
 
 - Once decided, notify administrative assistant, Ashlee Dykeman ([dykemana2@newpaltz.edu](mailto:dykemana2@newpaltz.edu)), and your instructor your intended hours. Ashlee will assign you either room SH 240 or 241.
 	- You will be given card access to both rooms at the beginning of the semester. If you don't have access, please let Ashlee know. 
@@ -35,17 +35,17 @@ Office hours are your opportunity to provide students with extra help, answer qu
 ## Handling Challenges
 
 - If a student becomes frustrated or confrontational, remain calm and professional.  
-	  - Listen, acknowledge their concern, and suggest following up with the instructor if needed.  
+  - Listen, acknowledge their concern, and suggest following up with the instructor if needed.  
 - If you cannot answer a question, be honest. Take note and follow up after checking with the instructor.  
 - If very few students attend, use the time to review materials, grade assignments, or do your own coursework. 
 
 ---
 ## Cancellations & Rescheduling
 
-- If you must miss office hours due to illness or another conflict:  
-	  - Inform the instructor as soon as possible.  
-	  - Post an announcement (through Brightspace or email) to let students know.  
-	  - If appropriate, reschedule a make-up session.  
+If you must miss office hours due to illness or another conflict:  
+- Inform the instructor as soon as possible.  
+- Post an announcement (through Brightspace or email) to let students know.  
+- If appropriate, reschedule a make-up session.  
 
 ---
 Office hours are about building trust and providing students with the extra support they need. Your approachability and consistency make a big difference!
