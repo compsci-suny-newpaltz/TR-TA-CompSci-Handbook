@@ -28,7 +28,7 @@
 
 * **How-Tos**
   * [Access Course in Brightspace](5%20Resources/How-Tos/How-To%20Access%20Course%20in%20Brightspace.md)
-  * [Grade in Brightspace](5%20Resources/How-Tos/How-To%20Grade%20in%20Brightspace.md)
+  * [Grade in Brightspace](5%20Resources/How-Tos/How-to%20Grade%20in%20Brightspace.md)
   * [Create an Announcement](5%20Resources/How-Tos/How-To%20Create%20an%20Announcement.md)
   * [Sign Timesheet](5%20Resources/How-Tos/How-To%20Sign%20Timesheet.md)
   * [Use The Projector in Lab](5%20Resources/How-Tos/How-To%20Use%20The%20Projector%20in%20Lab.md)

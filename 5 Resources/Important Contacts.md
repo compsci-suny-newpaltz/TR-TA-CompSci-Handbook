@@ -12,7 +12,8 @@ Keep this list handy throughout the semester. These are the people and offices y
 
 - **Location:** Science Hall (SH) 253  
 - **Email**: compsci@newpaltz.edu
- ---
+
+---
 ## Graduate Coordinator
 
 - **Name:** Kaitlin Hoffmann  
@@ -49,12 +50,12 @@ Keep this list handy throughout the semester. These are the people and offices y
 SUNY New Paltz Title IX coordinators are **Danielle Strauchler** and **Tanhena Pacheco Dunn**:
 
 **Danielle Strauchler**
-- **Location:** Haggerty Administrative Building (HAB) 602B  
+- **Location:** Haggerty Administrative Building (HAB) 602B
 - **Phone:** [845-257-3184](tel:8452573184)
 - **Email:** [strauchd@newpaltz.edu](mailto:strauchd@newpaltz.edu)
 
 **Tanhena Pacheco Dunn**
-- **Location:** Haggerty Administrative Building (HAB) 602A 
+- **Location:** Haggerty Administrative Building (HAB) 602A
 - **Phone:** [845-257-3675](tel:8452573675)
 - **Email:** [pachecot@newpaltz.edu](mailto:pachecot@newpaltz.edu)
 

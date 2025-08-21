@@ -21,7 +21,7 @@ As a TA, you may encounter technical issues, whether in Brightspace, email, or o
 ---
 ## Where to Go for Help
 
-- **Course Instructor** – first point of contact for anything course-related (see [[Important Contacts]]).  
+- **Course Instructor** – first point of contact for anything course-related (see [Important Contacts](/5%20Resources/Important%20Contacts.md)).  
 - **[IT Help Desk](https://newpaltz.teamdynamix.com/TDClient/1905/Portal/Home/)** – for technical support with accounts, email, or hardware.  
 - [**Brightspace Support**](https://newpaltz.teamdynamix.com/TDClient/1905/Portal/Requests/ServiceDet?ID=51541) – for grading, course content, or access problems.  
 
