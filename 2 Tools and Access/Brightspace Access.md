@@ -1,6 +1,6 @@
 # Brightspace Access
 
-Brightspace is the main Learning Management System (LMS) used for course content, assignments, grades, and communication. As a TA/TR, you will be given access to assist with grading, managing submissions, creating announcements, or answering student questions.
+Brightspace is the main Learning Management System (LMS) used for course content, assignments, grades, and communication. As a TR, you will be given access to assist with grading, managing submissions, creating announcements, or answering student questions.
 
 ---
 ## Getting Access

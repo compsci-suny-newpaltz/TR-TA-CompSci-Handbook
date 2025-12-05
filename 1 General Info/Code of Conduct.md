@@ -1,6 +1,6 @@
 # Code of Conduct 
 
-As a TA/TR/GA, you represent the Computer Science department and the university. Your conduct should reflect professionalism, integrity, and a commitment to creating a supportive and inclusive environment for all students.
+As a TR, you represent the Computer Science department and the university. Your conduct should reflect professionalism, integrity, and a commitment to creating a supportive and inclusive environment for all students.
 
 Please review and follow the expectations below:
 
@@ -28,7 +28,7 @@ Please review and follow the expectations below:
 ---
 ## Communication
 
-- Respond to emails from students or faculty within 24–48 hours, unless instructed otherwise and on during weekends and holidays. 
+- Respond to emails from students or faculty within 24–48 hours, unless instructed otherwise and during weekends and holidays. 
 - DO NOT feel obligated to respond to emails outside of typical business hours (M - F 9 AM - 5 PM). If a student is particularly needy or demanding, reach out to the instructor for support.
 - Keep the instructor informed about any concerns or incidents.
 - Ask for help or clarification when needed. Communication is key!

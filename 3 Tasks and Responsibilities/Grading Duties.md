@@ -1,6 +1,6 @@
 # Grading Duties
 
-As a TR/TA, grading is one of your most important responsibilities. Your work helps ensure fairness, consistency, and timely feedback for students.  
+As a TR, grading is one of your most important responsibilities. Your work helps ensure fairness, consistency, and timely feedback for students.  
 
 ---
 ## General Expectations

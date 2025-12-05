@@ -1,6 +1,6 @@
 # Weekly Checklist
 
-This checklist outlines your regular responsibilities as a TA/TR. Use it as a guide each week to stay on track and ensure nothing is overlooked.
+This checklist outlines your regular responsibilities as a TR. Use it as a guide each week to stay on track and ensure nothing is overlooked.
 
 ---
 ## Beginning of the Week

@@ -1,6 +1,6 @@
 # Mailroom
 
-The department mailroom is located in **SH 253**. Each TR/TA is assigned a mailbox and should check it regularly. The mailroom is also equipped with a copier and a small fridge. This space is for faculty and staff only. Students should never have access.
+The department mailroom is located in **SH 251**. Each TR is assigned a mailbox and should check it regularly. The mailroom is also equipped with a copier and a small fridge. This space is for faculty and staff only. Students should never have access.
 
 ---
 ## Mailbox Use

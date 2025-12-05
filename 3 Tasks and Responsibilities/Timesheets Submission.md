@@ -1,6 +1,6 @@
 # Timesheets Submission
 
-As a TA, you are required to submit a monthly **TA/GA Attendance Report** to record any absences. Submitting this form correctly and on time ensures you are paid without delays. 
+As a TR, you are required to submit a monthly **TA/TR/GA Attendance Report** to record any absences. Submitting this form correctly and on time ensures you are paid without delays. 
 
 ---
 ## Deadlines
@@ -9,7 +9,7 @@ As a TA, you are required to submit a monthly **TA/GA Attendance Report** to rec
 - Late submissions may delay your stipend payment.  
 
 ---
-## Monthly TA/GA Attendance Report Form
+## Monthly TA/TR/GA Attendance Report Form
 
 - You will receive an email reminder from me at the end of each month, with the form attached. 
 - The form can also be found here: [Monthly TA/GA Attendance Report (PDF)](https://www.newpaltz.edu/media/payroll/monthlyta-gaattendancereport.pdf)  

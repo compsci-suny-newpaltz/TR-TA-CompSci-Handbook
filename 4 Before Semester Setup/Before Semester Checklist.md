@@ -1,6 +1,6 @@
 # Before Semester Checklist
 
-This checklist will help you prepare for your TA responsibilities before classes begin. Completing these steps ensures you are ready to support the course from day one.
+This checklist will help you prepare for your TR responsibilities before classes begin. Completing these steps ensures you are ready to support the course from day one.
 
 ---
 ## Administrative Setup
@@ -29,8 +29,8 @@ This checklist will help you prepare for your TA responsibilities before classes
 ---
 ## Department & Logistics
 
-- [ ] Learn the location of the mailroom (SH 253), your assigned office (SH 240 or 241), and the location of your labs.  
-- [ ] Review the TA Handbook and ask questions if anything is unclear.  
+- [ ] Learn the location of the mailroom (SH 251), your assigned office (SH 240 or 241), and the location of your labs.  
+- [ ] Review the TR Handbook and ask questions if anything is unclear.  
 - [ ] Save important [department phone numbers and emails](https://www.newpaltz.edu/compsci/directory.html).  
 - [ ] Know where to go for [emergencies](https://www.newpaltz.edu/studentaffairs/responseplan.html) or [Technical Help](/2%20Tools%20and%20Access/Technical%20Help.md).  
 

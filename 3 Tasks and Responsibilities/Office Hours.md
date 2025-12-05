@@ -1,6 +1,6 @@
 # Office Hours
 
-Office hours are your opportunity to provide students with extra help, answer questions, and support their learning outside of class. They are an important part of your responsibilities as a TA.
+Office hours are your opportunity to provide students with extra help, answer questions, and support their learning outside of class. They are an important part of your responsibilities as a TR.
 
 ---
 ## Setting Up Office Hours

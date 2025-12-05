@@ -1,6 +1,6 @@
 # Technical Help
 
-As a TA, you may encounter technical issues, whether in Brightspace, email, or other course-related systems. While you are **not responsible for fixing technical problems**, it’s important to know where to direct questions and how to handle issues if they arise.
+As a TR, you may encounter technical issues, whether in Brightspace, email, or other course-related systems. While you are **not responsible for fixing technical problems**, it’s important to know where to direct questions and how to handle issues if they arise.
 
 ---
 ## Common Scenarios
@@ -12,7 +12,7 @@ As a TA, you may encounter technical issues, whether in Brightspace, email, or o
 - **Classroom technology problems** (projector, software, etc.): A common issue is the projector not working when instructing a lab. Instead of submitting a ticket, which could take hours, **call them directly** at **[845-257-4357]((tel:8452574357))**. Explain the situation, and they will have someone come down as soon as possible to fix the issue. 
 
 ---
-## What TRs/TAs Should NOT Do
+## What TRs Should NOT Do
 
 - Do not attempt to repair or reset institutional accounts.  
 - Do not install unauthorized software on lab or classroom computers.  

@@ -1,6 +1,6 @@
 # Role Overview
 
-As a TA/TR, you play a vital role in supporting course delivery and enhancing student learning. Below is a breakdown of expectations, workload, and eligibility to help you succeed.
+As a TR, you play a vital role in supporting course delivery and enhancing student learning. Below is a breakdown of expectations, workload, and eligibility to help you succeed.
 
 ---
 ## Assistantship Types & Workload
@@ -21,13 +21,13 @@ Your actual workload may fluctuate slightly throughout the semester based on gra
 
 - You must be a **matriculated graduate student in good academic standing**, maintaining at least a **3.0 GPA**.
 - You must be enrolled in at least **6 graduate credits per semester** regardless if you are a Part-Time or Full-Time.
-- TA appointments are formalized through an **official appointment letter** and completed hiring paperwork.
+- TR appointments are formalized through an **official appointment letter** and completed hiring paperwork.
 - Compensation includes a stipend and tuition waiver. The amount depends on your assignment.
 
 ---
 ## Why This Role Matters
 
-As a TA, your support helps students succeed academically. Whether through grading, providing feedback, holding office hours, or answering student questions, you are a key part of the educational experience.
+As a TR, your support helps students succeed academically. Whether through grading, providing feedback, holding office hours, or answering student questions, you are a key part of the educational experience.
 
 You’ll also develop valuable skills in teaching, time management, and communication that can benefit your academic and professional growth.
 
