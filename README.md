@@ -1,8 +1,6 @@
-# Teaching Assistant Handbook – SUNY New Paltz Computer Science Department
+# Teacher of Record Handbook – SUNY New Paltz Computer Science Department
 
-Welcome! This handbook is designed to support Teaching Assistants (TAs) in the CS department with clear expectations, procedures, and helpful resources. Everything is organized by category for quick access.
-
-For a cleaner layout, check out the site here: https://compsci-suny-newpaltz.github.io/TR-TA-CompSci-Handbook/
+Welcome! This handbook is designed to support Teachers of Record (TRs) in the CS department with clear expectations, procedures, and helpful resources. Everything is organized by category for quick access.
 
 ---
 
