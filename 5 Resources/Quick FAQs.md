@@ -18,7 +18,7 @@ A: No. You must sign using something like the drawing tool in Outlook’s PDF vi
 ## Mailroom
 
 **Q: Where is the mailroom?**  
-A: SH 253.  
+A: SH 251.  
 
 **Q: How often should I check my mailbox?**  
 A: At least once per week.  
