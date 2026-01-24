@@ -18,7 +18,7 @@ CS Faculty emails, office hours and locations can be found under the faculty dir
 **Name:** Kaitlin Hoffmann  
 **Email:** hoffmank4@newpaltz.edu  
 **Office:** Science Hall (SH) 243  
-**Office Hours:** Mondays 1:15–3:15 PM, Tuesdays 2:45–4:45 PM  
+**Office Hours:** Mondays 5 - 6 PM, Tuesdays 12:30 – 3:30 PM  
 
 ---
 ## IT Help Desk / Service Desk
